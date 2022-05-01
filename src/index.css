@@ -12,3 +12,8 @@ body {
   color: #777;
   padding: 30px;
 }
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}

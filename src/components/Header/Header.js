@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import backgroundImageHero from '../../assets/img/hero.jpg'
 import logoWhite from '../../assets/img/logo-white.png'
@@ -26,6 +27,10 @@ const Header = () => {
           <span className="heading-primary-main">Outdoors</span>
           <span className="heading-primary-sub">is where life happens</span>
         </h1>
+
+        <Link to={'#'} className="btn btn-white btn-animated">
+          Discover our tours
+        </Link>
       </div>
     </header>
   )
