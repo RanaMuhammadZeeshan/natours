@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import backgroundImageHero from '../../assets/img/hero.jpg'
 import logoWhite from '../../assets/img/logo-white.png'
+import LinkButton from '../LinkButton/LinkButton'
 
-import './header.css'
+import './header.scss'
 
 const Header = () => {
   return (
@@ -18,19 +18,21 @@ const Header = () => {
       }}
       className="header"
     >
-      <div className="logo-box">
-        <img src={logoWhite} alt="company logo" className="logo" />
+      <div className="header__logo-box">
+        <img src={logoWhite} alt="company logo" className="header__logo" />
       </div>
 
-      <div className="text-box">
+      <div className="header__text-box">
         <h1 className="heading-primary">
-          <span className="heading-primary-main">Outdoors</span>
-          <span className="heading-primary-sub">is where life happens</span>
+          <span className="heading-primary--main">Outdoors</span>
+          <span className="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <Link to={'#'} className="btn btn-white btn-animated">
-          Discover our tours
-        </Link>
+        <LinkButton
+          linkTo={'#'}
+          classNames="btn--white btn--animated"
+          content="Discover our tours"
+        />
       </div>
     </header>
   )
