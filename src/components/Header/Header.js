@@ -4,8 +4,6 @@ import backgroundImageHero from '../../assets/img/hero.jpg'
 import logoWhite from '../../assets/img/logo-white.png'
 import LinkButton from '../LinkButton/LinkButton'
 
-import './header.scss'
-
 const Header = () => {
   return (
     <header
