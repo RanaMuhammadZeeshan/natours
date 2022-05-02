@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import nat1 from '../assets/img/nat-1-large.jpg'
 import nat2 from '../assets/img/nat-2-large.jpg'
 import nat3 from '../assets/img/nat-3-large.jpg'
+import FeatureCard from '../components/FeatureCard/FeatureCard'
 
 const HomePage = () => {
   return (
@@ -57,6 +58,43 @@ const HomePage = () => {
                 className="composition__photo composition__photo--p3"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-features">
+        <div className="row">
+          <div className="col-1-of-4">
+            <FeatureCard
+              icon={'icon-basic-world'}
+              title="Explore the world"
+              content="Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry."
+            />
+          </div>
+          <div className="col-1-of-4">
+            <FeatureCard
+              icon={'icon-basic-compass'}
+              title="Meet nature"
+              content="Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry."
+            />
+          </div>
+          <div className="col-1-of-4">
+            <FeatureCard
+              icon={'icon-basic-map'}
+              title="Find your way"
+              content="Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry."
+            />
+          </div>
+          <div className="col-1-of-4">
+            <FeatureCard
+              icon={'icon-basic-heart'}
+              title="Live a healthier life"
+              content="Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry."
+            />
           </div>
         </div>
       </section>
