@@ -2,7 +2,9 @@
   height: 95vh;
   background-size: cover;
   background-position: top;
+  -webkit-background-clip: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  background-clip: border-box;
   position: relative;
 
   &__logo-box {
