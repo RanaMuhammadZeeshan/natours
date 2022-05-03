@@ -11,6 +11,7 @@ import storyImage1 from '../assets/img/nat-8.jpg'
 import storyImage2 from '../assets/img/nat-9.jpg'
 import bgVideo1 from '../assets/img/video.mp4'
 import bgVideo2 from '../assets/img/video.webm'
+import BookForm from '../components/BookForm/BookForm'
 
 import Card from '../components/Card/Card'
 import FeatureCard from '../components/FeatureCard/FeatureCard'
@@ -220,6 +221,16 @@ const HomePage = () => {
           <Link to={'#'} className="btn-text">
             Read all stories &rarr;
           </Link>
+        </div>
+      </section>
+
+      <section className="section-book">
+        <div className="row">
+          <div className="book">
+            <div className="book__form">
+              <BookForm />
+            </div>
+          </div>
         </div>
       </section>
     </React.Fragment>
