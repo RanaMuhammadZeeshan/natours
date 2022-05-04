@@ -39,6 +39,7 @@
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all 0.5s;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 
@@ -61,6 +62,7 @@
     text-align: center;
     opacity: 0;
     transition: all 0.5s;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 
@@ -71,6 +73,7 @@
 
   &:hover &__img {
     transform: translateX(-4rem) scale(1);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     filter: blur(3px) brightness(80%);
   }

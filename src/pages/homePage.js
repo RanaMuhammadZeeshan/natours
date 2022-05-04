@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import nat1 from '../assets/img/nat-1-large.jpg'
-import nat2 from '../assets/img/nat-2-large.jpg'
-import nat3 from '../assets/img/nat-3-large.jpg'
+import nat1Large from '../assets/img/nat-1-large.jpg'
+import nat1 from '../assets/img/nat-1.jpg'
+import nat2Large from '../assets/img/nat-2-large.jpg'
+import nat2 from '../assets/img/nat-2.jpg'
+import nat3Large from '../assets/img/nat-3-large.jpg'
+import nat3 from '../assets/img/nat-3.jpg'
 import secondaryCardImage from '../assets/img/nat-5.jpg'
 import primaryCardImage from '../assets/img/nat-6.jpg'
 import tertiaryCardImage from '../assets/img/nat-7.jpg'
@@ -77,19 +80,25 @@ const HomePage = () => {
           <div className="col-1-of-2">
             <div className="composition">
               <img
-                src={nat1}
+                srcSet={`${nat1} 300w, ${nat1Large} 1000w`}
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                 alt="nature adventure tour 1"
                 className="composition__photo composition__photo--p1"
+                src={nat1Large}
               />
               <img
-                src={nat2}
+                srcSet={`${nat2} 300w, ${nat2Large} 1000w`}
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                 alt="nature adventure tour 2"
                 className="composition__photo composition__photo--p2"
+                src={nat1Large}
               />
               <img
-                src={nat3}
+                srcSet={`${nat3} 300w, ${nat3Large} 1000w`}
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                 alt="nature adventure tour 3"
                 className="composition__photo composition__photo--p3"
+                src={nat3Large}
               />
             </div>
           </div>

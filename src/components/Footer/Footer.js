@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import footerLogo from '../../assets/img/logo-green-2x.png'
+import footerLogo2x from '../../assets/img/logo-green-2x.png'
+import footerLogo1x from '../../assets/img/logo-green-1x.png'
+import footerLogoSmall1x from '../../assets/img/logo-green-small-1x.png'
+import footerLogoSmall2x from '../../assets/img/logo-green-small-2x.png'
 
 const Footer = () => {
   const footerLinks = [
@@ -27,7 +30,18 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__logo-box">
-        <img src={footerLogo} alt="full logo" className="footer__logo" />
+        <picture className="footer__logo">
+          <source
+            srcSet={`${footerLogoSmall1x} 1x, ${footerLogoSmall2x} 2x`}
+            media="(max-width: 37.5rem)"
+          />
+          <img
+            srcSet={`${footerLogo1x} 1x, ${footerLogo2x} 2x`}
+            alt="full logo"
+            className="footer__logo"
+            src={footerLogo2x}
+          />
+        </picture>
       </div>
 
       <div className="row">
