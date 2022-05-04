@@ -14,7 +14,7 @@ const BookForm = () => {
           id="name"
           required
         />
-        <label for="name" className="form__label">
+        <label htmlFor="name" className="form__label">
           Full name
         </label>
       </div>
@@ -27,7 +27,7 @@ const BookForm = () => {
           id="email"
           required
         />
-        <label for="email" className="form__label">
+        <label htmlFor="email" className="form__label">
           Email address
         </label>
       </div>
@@ -40,7 +40,7 @@ const BookForm = () => {
             id="small"
             name="size"
           />
-          <label for="small" className="form__radio-label">
+          <label htmlFor="small" className="form__radio-label">
             <span className="form__radio-button"></span>
             Small tour group
           </label>
@@ -52,7 +52,7 @@ const BookForm = () => {
             id="large"
             name="size"
           />
-          <label for="large" className="form__radio-label">
+          <label htmlFor="large" className="form__radio-label">
             <span className="form__radio-button"></span>
             Large tour group
           </label>

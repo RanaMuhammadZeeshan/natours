@@ -185,7 +185,7 @@ const HomePage = () => {
               image={tertiaryCardImage}
               lightColor={'#2998ff'}
               darkColor={'#5643fa'}
-              heading={'The Forest Hiker'}
+              heading={'The Snow Adventurer'}
               detailList={detailListTertiary}
               price={'897'}
               popupContent={` Lorem Ipsum is simply dummy text of the printing and typesetting
